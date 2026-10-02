@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Beard Barber | Barbearia em Canoas</title>
+    <meta name="description" content="Barbearia masculina em Canoas/RS. Cortes, barba e serviços personalizados em um ambiente moderno e confortável.">
+    
+    <!-- Open Graph Básico -->
+    <meta property="og:title" content="Black Beard Barber">
+    <meta property="og:description" content="Seu estilo. Sua marca. Mais do que um corte, uma experiência.">
+    <meta property="og:type" content="website">
+
+    <!-- Fontes e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-content">
+            <a href="#inicio" class="logo">
+                <h1>BLACK BEARD</h1>
+                <span>BARBER SHOP</span>
+            </a>
+            
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <a href="#servicos" class="btn btn-primary nav-btn">AGENDAR</a>
+            </nav>
+
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content animate-on-scroll">
+                <h2>SEU ESTILO.<br><span class="highlight">SUA MARCA.</span></h2>
+                <h3>Mais do que um corte. Uma experiência.</h3>
+                <p>Na Black Beard, tradição e estilo se encontram para criar um visual que combina com você.</p>
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn btn-primary">AGENDAR HORÁRIO</a>
+                    <a href="#sobre" class="btn btn-outline">CONHECER SERVIÇOS</a>
+                </div>
+            </div>
+            <div class="hero-info animate-on-scroll">
+                <i class="far fa-clock"></i>
+                <div>
+                    <strong>SEG — SÁB</strong>
+                    <span>09:00 — 20:00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="about section">
+            <div class="container about-grid">
+                <div class="about-img animate-on-scroll slide-right">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior da barbearia com barbeiro cortando cabelo">
+                </div>
+                <div class="about-text animate-on-scroll slide-left">
+                    <h2 class="section-title">TRADIÇÃO QUE EVOLUI</h2>
+                    <p>A Black Beard nasceu com o propósito de transformar o simples ato de cortar o cabelo em uma experiência completa. Unimos técnicas tradicionais, tendências modernas e um ambiente pensado para você relaxar e cuidar do seu visual.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>Desde 2019</h4>
+                            <span>No mercado</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>+2.000</h4>
+                            <span>Clientes satisfeitos</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5</h4>
+                            <span>Profissionais</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>4.9/5</h4>
+                            <span>Avaliação</span>
+                        </div>
+                    </div>
+                    <a href="#diferenciais" class="btn btn-primary">CONHEÇA NOSSA HISTÓRIA</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="services section bg-dark">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+                    <p>Escolha o serviço ideal e reserve seu horário.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon"><i class="fas fa-cut"></i></div>
+                        <div class="service-info">
+                            <h3>Corte Tradicional</h3>
+                            <span class="price">R$ 35,00</span>
+                            <p>Corte masculino personalizado de acordo com seu estilo.</p>
+                            <button class="btn btn-outline btn-agendar" data-servico="Corte Tradicional">AGENDAR</button>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                        <div class="service-info">
+                            <h3>Corte + Barba</h3>
+                            <span class="price">R$ 55,00</span>
+                            <p>Corte completo acompanhado de acabamento e modelagem da barba.</p>
+                            <button class="btn btn-outline btn-agendar" data-servico="Corte + Barba">AGENDAR</button>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="service-icon"><i class="fas fa-pump-soap"></i></div>
+                        <div class="service-info">
+                            <h3>Barba</h3>
+                            <span class="price">R$ 25,00</span>
+                            <p>Modelagem, acabamento e toalha quente.</p>
+                            <button class="btn btn-outline btn-agendar" data-servico="Barba">AGENDAR</button>
+                        </div>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="service-icon"><i class="fas fa-eye"></i></div>
+                        <div class="service-info">
+                            <h3>Corte + Sobrancelha</h3>
+                            <span class="price">R$ 45,00</span>
+                            <p>Corte completo com acabamento das sobrancelhas.</p>
+                            <button class="btn btn-outline btn-agendar" data-servico="Corte + Sobrancelha">AGENDAR</button>
+                        </div>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="service-icon"><i class="fas fa-hot-tub"></i></div>
+                        <div class="service-info">
+                            <h3>Barba Premium</h3>
+                            <span class="price">R$ 35,00</span>
+                            <p>Experiência completa com toalha quente e produtos premium.</p>
+                            <button class="btn btn-outline btn-agendar" data-servico="Barba Premium">AGENDAR</button>
+                        </div>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="service-card animate-on-scroll highlight-card" style="transition-delay: 0.5s;">
+                        <div class="service-icon"><i class="fas fa-crown"></i></div>
+                        <div class="service-info">
+                            <h3>Combo Black</h3>
+                            <span class="price">R$ 70,00</span>
+                            <p>O pacote completo: Corte + barba + sobrancelha.</p>
+                            <button class="btn btn-primary btn-agendar" data-servico="Combo Black">AGENDAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais Section -->
+        <section id="diferenciais" class="differentials section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">POR QUE A BLACK BEARD?</h2>
+                </div>
+                <div class="diff-grid">
+                    <div class="diff-item animate-on-scroll">
+                        <i class="fas fa-medal"></i>
+                        <h4>Profissionais especializados</h4>
+                        <p>Nossa equipe está em constante treinamento para trazer as melhores técnicas.</p>
+                    </div>
+                    <div class="diff-item animate-on-scroll" style="transition-delay: 0.1s;">
+                        <i class="fas fa-spray-can"></i>
+                        <h4>Produtos de alta qualidade</h4>
+                        <p>Utilizamos apenas marcas renomadas para o cuidado do seu cabelo e barba.</p>
+                    </div>
+                    <div class="diff-item animate-on-scroll" style="transition-delay: 0.2s;">
+                        <i class="fas fa-couch"></i>
+                        <h4>Ambiente confortável</h4>
+                        <p>Cerveja gelada, boa música, ar-condicionado e muito conforto enquanto você espera.</p>
+                    </div>
+                    <div class="diff-item animate-on-scroll" style="transition-delay: 0.3s;">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Atendimento personalizado</h4>
+                        <p>Cada cliente é único. Avaliamos seu perfil para entregar o melhor resultado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria Section -->
+        <section id="galeria" class="gallery section bg-dark">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">NOSSA GALERIA</h2>
+                    <p>Um pouco do nosso espaço e dos nossos trabalhos.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Corte masculino" loading="lazy"></div>
+                    <div class="gallery-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1621644033379-373302bc6f01?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Detalhe do ambiente" loading="lazy"></div>
+                    <div class="gallery-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior da barbearia" loading="lazy"></div>
+                    <div class="gallery-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1593702288056-ccbfebbcce46?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barbeiro trabalhando" loading="lazy"></div>
+                    <div class="gallery-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Acabamento de barba" loading="lazy"></div>
+                    <div class="gallery-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fachada e estilo" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <button class="nav-lightbox prev-lightbox"><i class="fas fa-chevron-left"></i></button>
+            <img class="lightbox-content" id="lightbox-img" alt="Imagem ampliada">
+            <button class="nav-lightbox next-lightbox"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Equipe Section -->
+        <section id="equipe" class="team section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">NOSSO TIME</h2>
+                    <p>Os mestres responsáveis pelo seu estilo.</p>
+                </div>
+                <div class="team-grid">
+                    <!-- Member 1 -->
+                    <div class="team-card animate-on-scroll">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Gabriel - Barbeiro" loading="lazy">
+                            <div class="team-social"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Gabriel</h4>
+                            <span>Barbeiro / Especialista em cortes modernos</span>
+                        </div>
+                    </div>
+                    <!-- Member 2 -->
+                    <div class="team-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Lucas - Barbeiro" loading="lazy">
+                            <div class="team-social"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Lucas</h4>
+                            <span>Barbeiro / Especialista em barba</span>
+                        </div>
+                    </div>
+                    <!-- Member 3 -->
+                    <div class="team-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Rafael - Barbeiro" loading="lazy">
+                            <div class="team-social"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Rafael</h4>
+                            <span>Barbeiro / Especialista em cortes clássicos</span>
+                        </div>
+                    </div>
+                    <!-- Member 4 -->
+                    <div class="team-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Matheus - Barbeiro" loading="lazy">
+                            <div class="team-social"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Matheus</h4>
+                            <span>Barbeiro / Especialista em visagismo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos Section -->
+        <section id="depoimentos" class="testimonials section bg-dark">
+            <div class="container animate-on-scroll">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <p>"Ambiente incrível e atendimento excelente. Saí exatamente com o corte que queria."</p>
+                        <h4>— João Silva</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"Melhor barbearia que já fui. Os caras realmente entendem de corte."</p>
+                        <h4>— Pedro Henrique</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"Atendimento muito bom, ambiente confortável e preço justo."</p>
+                        <h4>— Marcos Oliveira</h4>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Section -->
+        <section id="instagram" class="instagram section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">SIGA A BLACK BEARD</h2>
+                    <p>@blackbeardbarber</p>
+                </div>
+                <div class="insta-grid">
+                    <a href="#" class="insta-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1621644033379-373302bc6f01?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram Post 1" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+                    <a href="#" class="insta-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram Post 2" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+                    <a href="#" class="insta-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram Post 3" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+                    <a href="#" class="insta-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram Post 4" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+                    <a href="#" class="insta-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram Post 5" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+                    <a href="#" class="insta-item animate-on-scroll"><img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Instagram Post 6" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+                </div>
+                <div class="insta-btn-container animate-on-scroll">
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">VER NO INSTAGRAM</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato / Localização -->
+        <section id="contato" class="contact section bg-dark">
+            <div class="container contact-grid">
+                <!-- Informações e Mapa -->
+                <div class="contact-info animate-on-scroll slide-right">
+                    <h2 class="section-title">LOCALIZAÇÃO</h2>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Rua Exemplo, 123 — Canoas/RS</span></li>
+                        <li><i class="fas fa-phone-alt"></i> <span>(51) 99999-9999</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>contato@blackbeard.com.br</span></li>
+                        <li><i class="fas fa-clock"></i> <span>Segunda a sábado — 09:00 às 20:00</span></li>
+                    </ul>
+                    <div class="contact-buttons">
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fas fa-map"></i> ABRIR NO GOOGLE MAPS</a>
+                        <a href="https://wa.me/5551999999999" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-whatsapp"></i> FALAR NO WHATSAPP</a>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="contact-form animate-on-scroll slide-left">
+                    <h2 class="section-title">AGENDE SEU HORÁRIO</h2>
+                    <form id="agendamento-form">
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(51) 99999-9999" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="servico-select">Serviço</label>
+                                <select id="servico-select" name="servico" required>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="Corte Tradicional">Corte Tradicional</option>
+                                    <option value="Corte + Barba">Corte + Barba</option>
+                                    <option value="Barba">Barba</option>
+                                    <option value="Corte + Sobrancelha">Corte + Sobrancelha</option>
+                                    <option value="Barba Premium">Barba Premium</option>
+                                    <option value="Combo Black">Combo Black</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="data">Data desejada</label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="horario">Horário</label>
+                                <input type="time" id="horario" name="horario" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem (opcional)</label>
+                            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Alguma observação?"></textarea>
+                        </div>
+                        <div id="form-msg" class="form-msg"></div>
+                        <button type="submit" class="btn btn-primary btn-block">SOLICITAR AGENDAMENTO</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>BLACK BEARD</h2>
+                <span>BARBER SHOP</span>
+                <p>"Seu estilo. Sua marca."</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Black Beard Barber. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5551999999999?text=Olá! Gostaria de saber mais sobre os serviços da Black Beard." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
